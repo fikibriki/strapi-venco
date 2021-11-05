@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "restaurants",
+  "collectionName": "svedoshtvas",
   "info": {
-    "name": "restaurant"
+    "name": "Svedoshtva"
   },
   "options": {
     "increments": true,
@@ -11,7 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
       "type": "string"
     }
   }
