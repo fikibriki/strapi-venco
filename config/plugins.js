@@ -5,11 +5,11 @@ module.exports = ({env}) => {
       upload: {
         provider: 'aws-s3',
         providerOptions: {
-          accessKeyId: env('AWS_ACCESS_KEY_ID'),
-          secretAccessKey: env('AWS_ACCESS_KEY'),
-          region: env('AWS_REGION'),
+          accessKeyId: env('AWS_ACCESS_KEY_ID', 'VENCO'),
+          secretAccessKey: env('AWS_ACCESS_KEY', 'VENCO'),
+          region: env('AWS_REGION', 'eu-west-1'),
           params: {
-            Bucket: env('AWS_BUCKET'),
+            Bucket: env('AWS_BUCKET', 'VENCO'),
           }
         }
       }
